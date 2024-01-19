@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ramincomaintenance/static/css/main.6ab2c769.css",
+    "main.js": "/ramincomaintenance/static/js/main.42e2a095.js",
+    "static/media/take3.jpg": "/ramincomaintenance/static/media/take3.88c4939038baa1723986.jpg",
+    "static/media/take2.jpg": "/ramincomaintenance/static/media/take2.f769b35447c56ed8036f.jpg",
+    "static/media/tools-background.jpg": "/ramincomaintenance/static/media/tools-background.5586412c1107ecc8fa3e.jpg",
+    "static/media/whoweare.jpg": "/ramincomaintenance/static/media/whoweare.d10dd6f850dc748bd42f.jpg",
+    "static/media/ourservices.jpg": "/ramincomaintenance/static/media/ourservices.e16fb37e50a35a03c8bd.jpg",
+    "static/media/ourteam.jpg": "/ramincomaintenance/static/media/ourteam.581cf4a0c5f437324d4e.jpg",
+    "index.html": "/ramincomaintenance/index.html",
+    "main.6ab2c769.css.map": "/ramincomaintenance/static/css/main.6ab2c769.css.map",
+    "main.42e2a095.js.map": "/ramincomaintenance/static/js/main.42e2a095.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ab2c769.css",
+    "static/js/main.42e2a095.js"
+  ]
+}
