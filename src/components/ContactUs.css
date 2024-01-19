@@ -1,0 +1,15 @@
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-div input, textarea {
+    display: block;
+    padding: .8rem;
+    margin: .5vw 0;
+    border: 0;
+    border-radius: 2px;
+    font-size: 20px;
+    box-shadow: 0 0 1px black;
+}
