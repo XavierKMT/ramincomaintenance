@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import img1 from './pics/whoweare.jpg';
 import img2 from './pics/ourservices.jpg';
-import img3 from './pics/ourteam.jpg';
+import img3 from './pics/ourteamforreal.jpg';
 import { Grid } from "@mui/material";
 
 
