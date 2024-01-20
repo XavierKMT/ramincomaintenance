@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './Home';
 import About from './About';
@@ -12,7 +12,7 @@ function App() {
   const serviceRef = useRef(null);
   return (
     <div className='background'>
-      <HashRouter>
+      <Router>
         <Navbar serviceRef={serviceRef}/>
         <Routes>            
           <Route path="/" exact element={<Home ref={serviceRef} />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact" exact element={<Contact />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </Router>
     </div>
   );
 }
