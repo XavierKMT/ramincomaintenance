@@ -1,0 +1,72 @@
+.tagline-div {
+    padding: 10vh 20vw 10vh 25vw;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+.tagline {
+    font-weight: normal;
+    font-size: 400%;
+    width: fit-content;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.sub-tagline {
+    font-weight: normal;
+    width: fit-content;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#req-btn {
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    margin-top: 1vh;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+#req-btn:hover {
+    background-color: #e6e6e6;
+}
+.services-div {
+    background-color: #0d233c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    color: white;
+}
+.form-div {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .tagline-div {
+        padding: 5vh 15vw;
+    }
+    .tagline {
+        margin-top: auto;
+        height: min-content;
+        font-size: 300%;
+    }
+    .sub-tagline {
+        font-size: 150%;
+    }
+}
+@media (max-width: 480px) {
+    .tagline-div {
+        padding: 5vh 5vw;
+    }
+    .tagline {
+        margin-top: auto;
+        height: min-content;
+        font-size: 250%;
+    }
+    .sub-tagline {
+        font-size: 125%;
+    }
+}

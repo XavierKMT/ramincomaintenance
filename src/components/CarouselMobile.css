@@ -1,0 +1,39 @@
+.carousel-m-div {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.carousel-m-div img {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.carousel-m-controls {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: auto;
+}
+.carousel-m-controls img {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+    box-shadow: 0 0 10px 1px lightgray;
+    border-radius: 10%;
+}
+.carousel-m-title {
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.carousel-m-title p {
+    margin: 0;
+}

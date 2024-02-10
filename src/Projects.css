@@ -1,0 +1,24 @@
+.projects-div {
+    display: flex;
+    flex-direction: column;
+}
+.projects-header {
+    padding: 8vh 20vw;
+    background-color: rgba(100, 100, 100, 0.5);
+    text-align: center;
+}
+.projects-title {
+    font-weight: normal;
+    font-size: 400%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    margin: auto;
+}
+@media (max-width: 480px) {
+    .projects-header {
+        padding: 5vh 10vw;
+    }
+    .projects-title {
+        font-size: 300%;
+    }
+}

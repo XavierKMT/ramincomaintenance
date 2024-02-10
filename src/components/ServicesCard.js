@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardContent, Grid, Typography } from "@mui/material";
+import './ServicesCard.css';
 
 function ServicesCard() {
 
@@ -12,16 +13,16 @@ function ServicesCard() {
     ];
 
     return (
-        <Grid container spacing={2} style={{textAlign: 'center', width: '60vw'}}>
+        <Grid id='grid-container' container spacing={2}>
             {services.map(service => (
                 <Grid item sm={4} xs={6} key={service[0]}>
-                    <Card style={{backgroundColor: 'transparent', boxShadow: '0 0 5px 1px #1c3b5e'}}>
+                    <Card id='card'>
                         <CardHeader
+                            id='card-header'
                             title={service[0]}
-                            style={{color: 'white'}}
                         />
                         <CardContent>
-                            <Typography style={{color:'lightgray'}}>
+                            <Typography id='card-content'>
                                 {service[1]}
                             </Typography>
                         </CardContent>

@@ -1,0 +1,31 @@
+.about-div {
+    display: flex;
+    flex-direction: column;
+}
+.about-header {
+    padding: 8vh 20vw;
+    background-color: rgba(100, 100, 100, 0.5);
+    text-align: center;
+}
+.about-header-title {
+    font-weight: normal;
+    font-size: 350%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    margin: auto;
+}
+.about-pics-div {
+    background-color: white;
+    padding: 10vh 15vw;
+}
+@media (max-width: 480px) {
+    .about-header {
+        padding: 5vh 0;
+    }
+    .about-header-title {
+        font-size: 300%;
+    }
+    .about-pics-div {
+        padding: 7vh 2vw;
+    }
+}

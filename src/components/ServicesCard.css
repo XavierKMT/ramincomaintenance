@@ -1,0 +1,15 @@
+#grid-container {
+    text-align: center;
+    width: 95vw;
+}
+#card {
+    background-color: transparent;
+    box-shadow: 0 0 5px 1px #1c3b5e;
+    min-height: 100%;
+}
+#card-header {
+    color: white;
+}
+#card-content {
+    color: lightgray;
+}
