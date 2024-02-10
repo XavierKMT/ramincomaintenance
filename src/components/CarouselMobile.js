@@ -5,7 +5,7 @@ import './CarouselMobile.css';
 
 export default function CarouselMobile({ data }) {
 
-    const [index, setIndex] = useState(2);
+    const [index, setIndex] = useState(0);
 
     const handleLeft = () => {
         index === 0 ? setIndex(data.length - 1) : setIndex((prev) => prev - 1);
