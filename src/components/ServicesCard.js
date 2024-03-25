@@ -1,15 +1,23 @@
 import { Card, CardHeader, CardContent, Grid, Typography } from "@mui/material";
 import './ServicesCard.css';
+import text from './TextLanguage.json';
 
 function ServicesCard() {
 
-    const services = [
+    const services = text.lang === 'en' ? [
         ['Painting', 'Interior and Exterior painting'],
         ['Deck Staining', 'Semi-Transparent and Opaque Stains'],
         ['General Repairs', 'Drywall, Trim, Deck, Fence and much more!'],
         ['General Installations', 'Basic installations that comply with our RBQ accreditation'],
-        ['Pressure Washing','Cleaning driveways, walkways, house siding and much more!'],
-        ['Outdoor Projects','Cleaning gutters, raking leaves, landscaping, and much more!']
+        ['Pressure Washing', 'Cleaning driveways, walkways, house siding and much more!'],
+        ['Outdoor Projects', 'Cleaning gutters, raking leaves, landscaping, and much more!']
+    ] : [
+        ['Peinture', 'Peinture intérieure et extérieure'],
+        ['Teinture de terrasse', 'Teintures semi-transparentes et opaques'],
+        ['Réparations générales', 'Cloisons sèches, garnitures, terrasses, clôtures et bien plus encore!'],
+        ['Installations générales', 'Installations de base conformes à notre accréditation RBQ'],
+        ['Lavage à pression', 'Nettoyage des allées, des allées, des revêtements de maison et bien plus encore!'],
+        ['Projets extérieurs', 'Nettoyage des gouttières, ratissage des feuilles, aménagement paysager et bien plus encore!']
     ];
 
     return (

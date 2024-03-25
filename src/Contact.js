@@ -2,8 +2,10 @@ import { Button, Typography } from '@mui/material';
 import ContactUs from './components/ContactUs';
 import './Contact.css';
 import { useRef, useEffect, useState } from 'react';
+import text from './components/TextLanguage.json';
 
 function Contact() {
+    const langText = text[text.lang];
     const submitForm = useRef(null);
 
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -22,25 +24,25 @@ function Contact() {
         <div className='contact-div'>
             <div className='contact-header'>
                 <h1 className='contact-header-title'>
-                    Contact Us
+                    {langText.contacttitle}
                 </h1>
             </div>
             <div className='contact-page-form-div'>
                 <ContactUs />
                 <div className='contact-info-div'>
-                    <Typography variant='h5'>Thank You!</Typography>
-                    <Typography>We'd love to hear from you! Please feel free to reach out should you have any questions or comments.</Typography>
-                    <Typography variant='h5'><br />Raminco Maintenance</Typography>
-                    <Typography>ramincomaintenance@gmail.com<br />(438)-496-7497</Typography>
-                    <Typography variant='h5'><br />Hours of Operation</Typography>
-                    <Typography ref={submitForm}>Mon - Fri : 08:00am - 04:00pm<br />Sat - Sun : By Appointment</Typography>
+                    <Typography variant='h5'>{langText.thankyou}</Typography>
+                    <Typography>{langText.hearfromyou}</Typography>
+                    <Typography variant='h5'><br />{langText.ramincomaintenance}</Typography>
+                    <Typography>{langText.email}<br />{langText.phone}</Typography>
+                    <Typography variant='h5'><br />{langText.hourstitle}</Typography>
+                    <Typography ref={submitForm}>{langText.hoursmonfri}<br />{langText.hourssatsun}</Typography>
                 </div>
                 {screenWidth < 480 && 
                     <Button
                         id='contact-req-btn'
                         onClick={() => submitForm.current.scrollIntoView({behavior: 'smooth'})}
                     >
-                        ↓ Submit Enquiries Below ↓
+                        {langText.enquiriesbelow}
                     </Button>
                 }
             </div>

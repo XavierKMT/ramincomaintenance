@@ -2,9 +2,12 @@ import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import './ContactUs.css';
 import { Button } from "@mui/material";
+import text from './TextLanguage.json';
 
 
 function ContactUs() {
+    const langText = text[text.lang];
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -90,37 +93,37 @@ function ContactUs() {
             <form className='form-inputs' onSubmit={handleSubmit}>
                 <input
                     type='text'
-                    placeholder='Name'
+                    placeholder={langText.placeholdername}
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
-                {error.name && <p className='error-msg'>Name is required</p>}
+                {error.name && <p className='error-msg'>{langText.errname}</p>}
                 <input
                     type='text'
-                    placeholder='Email'
+                    placeholder={langText.placeholderemail}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                     type='text'
-                    placeholder='Phone'
+                    placeholder={langText.placeholderphone}
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
-                {error.email && error.phone && <p className='error-msg'>At least one of Email or Phone must be filled out</p>}
+                {error.email && error.phone && <p className='error-msg'>{langText.erremailphone}</p>}
                 <input
                     type='text'
-                    placeholder='Address'
+                    placeholder={langText.placeholderaddress}
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                 />
-                {error.address && <p className='error-msg'>Address is required</p>}
+                {error.address && <p className='error-msg'>{langText.erraddress}</p>}
                 <textarea
-                    placeholder="Project description"
+                    placeholder={langText.placeholderdesc}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
-                {error.message && <p className='error-msg'>Project description is required</p>}
+                {error.message && <p className='error-msg'>{langText.errdesc}</p>}
             </form>
             <Button 
                 onClick={handleSubmit} 
@@ -139,7 +142,7 @@ function ContactUs() {
                     }
                 }}
             >
-                Submit
+                {langText.submit}
             </Button>
         </div>
     );

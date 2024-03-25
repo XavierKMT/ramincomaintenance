@@ -3,37 +3,39 @@ import ServicesCard from './components/ServicesCard';
 import ContactUs from './components/ContactUs';
 import { Button } from '@mui/material';
 import './Home.css';
+import textData from './components/TextLanguage.json';
 
 const Home = forwardRef((props, ref) =>  {
     const contactForm = useRef(null);
+    const languageText = textData[textData.lang];
     return (
         <div>
             <div className='tagline-div'>
-                <h1 className='tagline'>
-                    For jobs that are too small for a contractor, but too big for you.
+                <h1 className='tagline' onClick={() => console.log(textData)}>
+                    {languageText.hometagline}
                 </h1>
                 <h2 className='sub-tagline'>
-                    A West-Island student-run maintenance company. Discover our services below.
+                    {languageText.homesubtagline}
                 </h2>
                 <Button 
                     id='req-btn'
                     onClick={() => contactForm.current.scrollIntoView({behavior: 'smooth'})}
                 >
-                    Make a Request
+                    {languageText.makereq}
                 </Button>
             </div>
             <div className='services-div'>
                 <h1 ref={ref}>
-                    Services We Offer
+                    {languageText.services}
                 </h1>
                 <ServicesCard />
             </div>
             <div className='form-div'>
                 <h1>
-                    Have another job in mind?
+                    {languageText.anotherjob}
                 </h1>
                 <h2 ref={contactForm}>
-                    Contact us with your enquiries!
+                    {languageText.contactenquiries}
                 </h2>
                 <ContactUs />
             </div>

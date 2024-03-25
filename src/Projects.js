@@ -3,9 +3,11 @@ import Carousel from "./components/Carousel";
 import CarouselMobile from "./components/CarouselMobile";
 import { data } from "./components/data";
 import './Projects.css';
+import text from './components/TextLanguage.json';
 
 
 function Projects() {
+    const langText = text[text.lang];
 
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
@@ -23,7 +25,7 @@ function Projects() {
         <div className='projects-div'>
             <div className='projects-header'>
                 <h1 className='projects-title'>
-                    Previous Projects
+                    {langText.projecttitle}
                 </h1>
             </div>
             <div style={{backgroundColor: 'white', padding: '5vh 0'}}>
