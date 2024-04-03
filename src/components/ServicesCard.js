@@ -8,14 +8,14 @@ function ServicesCard() {
         ['Painting', 'Interior and Exterior painting'],
         ['Deck Staining', 'Semi-Transparent and Opaque Stains'],
         ['General Repairs', 'Drywall, Trim, Deck, Fence and much more!'],
-        ['General Installations', 'Basic installations that comply with our RBQ accreditation'],
+        ['General Installations', 'Basic installations that comply with our RBQ accreditation (in progress)'],
         ['Pressure Washing', 'Cleaning driveways, walkways, house siding and much more!'],
         ['Outdoor Projects', 'Cleaning gutters, raking leaves, landscaping, and much more!']
     ] : [
         ['Peinture', 'Peinture intérieure et extérieure'],
         ['Teinture de terrasse', 'Teintures semi-transparentes et opaques'],
-        ['Réparations générales', 'Cloisons sèches, garnitures, terrasses, clôtures et bien plus encore!'],
-        ['Installations générales', 'Installations de base conformes à notre accréditation RBQ'],
+        ['Réparations générales', 'Cloisons sèches, plinthes, moulures, terrasses, clôtures et bien plus encore!'],
+        ['Installations générales', 'Installations de base conformes à notre accréditation RBQ (en cours)'],
         ['Lavage à pression', 'Nettoyage des allées, des allées, des revêtements de maison et bien plus encore!'],
         ['Projets extérieurs', 'Nettoyage des gouttières, ratissage des feuilles, aménagement paysager et bien plus encore!']
     ];
