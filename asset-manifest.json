@@ -1,7 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.32e047a8.css",
-    "main.js": "/static/js/main.7a7ba902.js",
+    "main.js": "/static/js/main.ecb5a121.js",
+    "static/media/Judys Deck - Before.jpg": "/static/media/Judys Deck - Before.1e24f7cafc5a3d859803.jpg",
+    "static/media/Sian office side desk.png": "/static/media/Sian office side desk.e349e1c4560cc5000bb1.png",
+    "static/media/James Deck Before 1.png": "/static/media/James Deck Before 1.f09eabdc53d88acb4478.png",
+    "static/media/James Deck Before 2.png": "/static/media/James Deck Before 2.f9bd60da166d087fe0c2.png",
+    "static/media/James Deck After 1.png": "/static/media/James Deck After 1.ff9f838fed5f5d7b12b5.png",
+    "static/media/Judy Deck After.png": "/static/media/Judy Deck After.5db9d0899e3442914895.png",
+    "static/media/James Deck After 2.png": "/static/media/James Deck After 2.d97f43fb7ca8004da4b9.png",
+    "static/media/Judy Painting After.png": "/static/media/Judy Painting After.0c5e687888442a9902f0.png",
+    "static/media/Judy Painting Before.png": "/static/media/Judy Painting Before.1c93d17b42663d60fd28.png",
+    "static/media/Electrical Box After.png": "/static/media/Electrical Box After.0b96ea8a6b810b13b388.png",
+    "static/media/Electrical Box Before.png": "/static/media/Electrical Box Before.a57cb2e3772fd19ca4c0.png",
     "static/media/logoblack.png": "/static/media/logoblack.a17f9b10c3b3fd06e05e.png",
     "static/media/take3.jpg": "/static/media/take3.88c4939038baa1723986.jpg",
     "static/media/whoweare.jpg": "/static/media/whoweare.d10dd6f850dc748bd42f.jpg",
@@ -9,10 +20,10 @@
     "static/media/ourteamforreal.jpg": "/static/media/ourteamforreal.1096ecf4a331b631e1c4.jpg",
     "index.html": "/index.html",
     "main.32e047a8.css.map": "/static/css/main.32e047a8.css.map",
-    "main.7a7ba902.js.map": "/static/js/main.7a7ba902.js.map"
+    "main.ecb5a121.js.map": "/static/js/main.ecb5a121.js.map"
   },
   "entrypoints": [
     "static/css/main.32e047a8.css",
-    "static/js/main.7a7ba902.js"
+    "static/js/main.ecb5a121.js"
   ]
 }
