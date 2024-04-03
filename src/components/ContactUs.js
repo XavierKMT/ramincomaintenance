@@ -92,6 +92,7 @@ function ContactUs() {
         <div className='contact-form-div'>
             <form className='form-inputs' onSubmit={handleSubmit}>
                 <input
+                    id='nameInput'
                     type='text'
                     placeholder={langText.placeholdername}
                     value={name}
@@ -99,12 +100,14 @@ function ContactUs() {
                 />
                 {error.name && <p className='error-msg'>{langText.errname}</p>}
                 <input
+                    id='emailInput'
                     type='text'
                     placeholder={langText.placeholderemail}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
+                    id='phoneInput'
                     type='text'
                     placeholder={langText.placeholderphone}
                     value={phone}
@@ -112,6 +115,7 @@ function ContactUs() {
                 />
                 {error.email && error.phone && <p className='error-msg'>{langText.erremailphone}</p>}
                 <input
+                    id='addressInput'
                     type='text'
                     placeholder={langText.placeholderaddress}
                     value={address}
@@ -119,6 +123,7 @@ function ContactUs() {
                 />
                 {error.address && <p className='error-msg'>{langText.erraddress}</p>}
                 <textarea
+                    id='descriptionInput'
                     placeholder={langText.placeholderdesc}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
