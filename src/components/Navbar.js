@@ -17,7 +17,7 @@ const Navbar = ({ serviceRef, handleLangChange}) => {
                     <img src={logo} alt='logo' className='logo'/>
                 </Link>
                 <div className='mobile-nav-section'>
-                    <button className='lang-btn' onClick={() => handleLangChange()}>{textData.lang.toUpperCase()}</button>
+                    <button className='lang-btn' onClick={() => handleLangChange()}>{textData.lang === 'en' ? 'FR' : 'EN'}</button>
                     <div className='menu-btn' onClick={() => setOpenMenu(!openMenu)}>
                         <span></span>
                         <span></span>
@@ -30,9 +30,11 @@ const Navbar = ({ serviceRef, handleLangChange}) => {
                     <Link to='/' onClick={() => setOpenMenu(false)}>{langText.navhome}</Link>
                 </li>
                 <li>
-                    <Link to='/' onClick={() => 
+                    <Link to='/' onClick={(e) => 
                         {
-                            serviceRef.current.scrollIntoView({behavior: 'smooth'});
+                            if (window.location.pathname === '/') {
+                                serviceRef.current.scrollIntoView({behavior: 'smooth'})
+                            }
                             setOpenMenu(false)
                         }}
                     >
