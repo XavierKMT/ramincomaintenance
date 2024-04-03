@@ -16,7 +16,7 @@ export default function Carousel({ data }) {
 
     return (
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}}>
-            <div onClick={handleLeft} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10}}>
+            <div onClick={handleLeft} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10, backgroundColor: 'white'}}>
                 <img src={leftArrow} alt="left arrow" />
             </div>
             <div style={{textAlign: 'center'}}>
@@ -25,7 +25,7 @@ export default function Carousel({ data }) {
                     {data[index].title}
                 </p>
             </div>
-            <div onClick={handleRight} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10}}>
+            <div onClick={handleRight} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10, backgroundColor: 'white'}}>
                 <img src={rightArrow} alt="right arrow" />
             </div>
         </div>

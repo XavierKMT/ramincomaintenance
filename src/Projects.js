@@ -28,7 +28,7 @@ function Projects() {
                     {langText.projecttitle}
                 </h1>
             </div>
-            <div style={{backgroundColor: 'white', padding: '5vh 0'}}>
+            <div style={{backgroundColor: '#F0F0F0', padding: '5vh 0'}}>
                 {screenWidth > 1024 ? <Carousel data={data}/> : <CarouselMobile data={data}/>}                
             </div>
         </div>
