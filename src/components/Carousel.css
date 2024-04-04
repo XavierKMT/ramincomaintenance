@@ -1,0 +1,22 @@
+/* className='carousel-div' style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}} */
+.carousel-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+/* className='arrow-div' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10, backgroundColor: 'white'}} */
+.arrow-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+/* className='project-img' width={window.screen.width-750} */
+.project-img {
+    max-width: 60vw;
+    max-height: 90vh;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import leftArrow from '../pics/left.png';
 import rightArrow from '../pics/right.png';
+import './Carousel.css';
 
 export default function Carousel({ data }) {
 
@@ -15,17 +16,17 @@ export default function Carousel({ data }) {
     }
 
     return (
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10px'}}>
-            <div onClick={handleLeft} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10, backgroundColor: 'white'}}>
+        <div className='carousel-div'>
+            <div onClick={handleLeft} className='arrow-div'>
                 <img src={leftArrow} alt="left arrow" />
             </div>
             <div style={{textAlign: 'center'}}>
-                <img src={data[index].img} alt="pic" width={500} />
+                <img src={data[index].img} alt="pic" className='project-img' />
                 <p>
                     {data[index].title}
                 </p>
             </div>
-            <div onClick={handleRight} style={{display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', boxShadow: '0 0 10px 1px lightgray', borderRadius: 10, backgroundColor: 'white'}}>
+            <div onClick={handleRight} className='arrow-div'>
                 <img src={rightArrow} alt="right arrow" />
             </div>
         </div>
