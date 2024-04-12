@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2add62c5.css",
+    "main.css": "/static/css/main.576e30ce.css",
     "main.js": "/static/js/main.c096a715.js",
     "static/media/Judys Deck - Before.jpg": "/static/media/Judys Deck - Before.1e24f7cafc5a3d859803.jpg",
     "static/media/Sian office side desk.png": "/static/media/Sian office side desk.e349e1c4560cc5000bb1.png",
+    "static/media/Website Background.png": "/static/media/Website Background.b1a037dda410d2601ca0.png",
     "static/media/James Deck Before 1.png": "/static/media/James Deck Before 1.f09eabdc53d88acb4478.png",
     "static/media/James Deck Before 2.png": "/static/media/James Deck Before 2.f9bd60da166d087fe0c2.png",
     "static/media/Our services logo.jpg": "/static/media/Our services logo.a6305869d423e5e9fe39.jpg",
     "static/media/James Deck After 1.png": "/static/media/James Deck After 1.ff9f838fed5f5d7b12b5.png",
     "static/media/Judy Deck After.png": "/static/media/Judy Deck After.5db9d0899e3442914895.png",
     "static/media/James Deck After 2.png": "/static/media/James Deck After 2.d97f43fb7ca8004da4b9.png",
-    "static/media/Website Background.png": "/static/media/Website Background.e001e139355c0f34f94e.png",
     "static/media/Judy Painting After.png": "/static/media/Judy Painting After.0c5e687888442a9902f0.png",
     "static/media/Judy Painting Before.png": "/static/media/Judy Painting Before.1c93d17b42663d60fd28.png",
     "static/media/Electrical Box After.png": "/static/media/Electrical Box After.0b96ea8a6b810b13b388.png",
@@ -19,11 +19,11 @@
     "static/media/Our team logo.jpg": "/static/media/Our team logo.e488f4bac463cc83cf42.jpg",
     "static/media/Who we are logo.jpg": "/static/media/Who we are logo.db65383166b136f05147.jpg",
     "index.html": "/index.html",
-    "main.2add62c5.css.map": "/static/css/main.2add62c5.css.map",
+    "main.576e30ce.css.map": "/static/css/main.576e30ce.css.map",
     "main.c096a715.js.map": "/static/js/main.c096a715.js.map"
   },
   "entrypoints": [
-    "static/css/main.2add62c5.css",
+    "static/css/main.576e30ce.css",
     "static/js/main.c096a715.js"
   ]
 }
