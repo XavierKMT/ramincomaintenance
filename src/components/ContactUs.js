@@ -21,23 +21,19 @@ function ContactUs() {
 
         let tempError = {};
         if (name === '') {
-            tempError.name = 'name is required';
+            tempError.name = true;
             console.log('name error');
         }
-        if (email === '') {
-            tempError.email = 'email is required';
-            console.log('email error');
-        }
-        if (phone === '') {
-            tempError.phone = 'phone is required';
-            console.log('pphone error');
+        if (email === '' &&  phone === '') {
+            tempError.emailphone = true;
+            console.log('email phone error');
         }
         if (address === '') {
-            tempError.address = 'address is required';
+            tempError.address = true;
             console.log('address error');
         }
         if (message === '') {
-            tempError.message = 'message is required';
+            tempError.message = true;
             console.log('msg error');
         }
 
@@ -113,7 +109,7 @@ function ContactUs() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
-                {error.email && error.phone && <p className='error-msg'>{langText.erremailphone}</p>}
+                {error.emailphone && <p className='error-msg'>{langText.erremailphone}</p>}
                 <input
                     id='addressInput'
                     type='text'
